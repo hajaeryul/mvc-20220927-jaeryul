@@ -13,26 +13,26 @@ import java.util.*;
 @Controller
 public class UserTestApi {
 
-    @ResponseBody
-    @PostMapping("/api/test/user/param")
-    public String addUserParam(
-            @RequestParam String username,
-            @RequestParam String password,
-            @RequestParam String name,
-            @RequestParam String email) {
-
-        Map<String, String> map = new HashMap<String, String>();
-
-        map.put("username", username);
-        map.put("password", password);
-        map.put("name", name);
-        map.put("email", email);
-
-        System.out.println("map: " + map.toString());
-
-        return map.toString();
-
-    }
+//    @ResponseBody
+//    @PostMapping("/api/test/user/param")
+//    public String addUserParam(
+//            @RequestParam String username,
+//            @RequestParam String password,
+//            @RequestParam String name,
+//            @RequestParam String email) {
+//
+//        Map<String, String> map = new HashMap<String, String>();
+//
+//        map.put("username", username);
+//        map.put("password", password);
+//        map.put("name", name);
+//        map.put("email", email);
+//
+//        System.out.println("map: " + map.toString());
+//
+//        return map.toString();
+//
+//    }
 
 
     @ResponseBody
